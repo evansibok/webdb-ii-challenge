@@ -1,0 +1,2 @@
+1. npx knex init - Create knexfile
+2. 
