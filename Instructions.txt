@@ -1,3 +1,7 @@
 1. npx knex init - Create knexfile
 2. Configure knexfile
-3. 
+3. Configure local debugger launch.json to be restartable.
+4. create one router file
+5. Create server file and import router to server
+6. Create db-config.js file for knex
+7. npx knex migrate:make <table name> - Create a migration file for that table
