@@ -1,13 +1,28 @@
 
-exports.seed = function(knex) {
+exports.seed = function (knex) {
   // Deletes ALL existing entries
-  return knex('table_name').del()
+  return knex('car').truncate()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      return knex('cars').insert([
+        {
+          make: 'Range Rover',
+          model: 'X-2330',
+          VIN: '1X27498UVHJNSOE90',
+          mileage: '10000 MPG',
+        },
+        {
+          make: 'Toyota Camry',
+          model: 'F0998',
+          VIN: '39499059XLDDUEI40',
+          mileage: '12302 MPG',
+        },
+        {
+          make: 'Volkswagen',
+          model: 'E-1198',
+          VIN: '89F0KVNNE49K2K511',
+          mileage: '10000 MPG',
+        }
       ]);
     });
 };
