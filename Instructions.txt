@@ -7,4 +7,7 @@
 7. npx knex migrate:make <table name> - Create a migration file for that table
 8. Add configuration to migration file
 9. npx knex seed:make <file name> - Create seed file
-10. 
+10. Add configuration to seed file
+11. npx knex migrate:up - To run migration
+12. npx knex seed:run - to seed database
+13. npx knex migrate:latest - subsequent migrations
