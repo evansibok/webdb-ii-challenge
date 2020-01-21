@@ -1,0 +1,13 @@
+1. npx knex init - Create knexfile
+2. Configure knexfile
+3. Configure local debugger launch.json to be restartable.
+4. create one router file
+5. Create server file and import router to server
+6. Create db-config.js file for knex
+7. npx knex migrate:make <table name> - Create a migration file for that table
+8. Add configuration to migration file
+9. npx knex seed:make <file name> - Create seed file
+10. Add configuration to seed file
+11. npx knex migrate:up - To run migration
+12. npx knex seed:run - to seed database
+13. npx knex migrate:latest - subsequent migrations
