@@ -5,7 +5,7 @@ exports.up = function (knex) {
     table.increments(); // For id/primary key column, auto increments
     table.string('make').notNullable();
     table.string('model').notNullable();
-    table.string('VIN', 17).unique().notNullable();
+    table.string('vin').unique().notNullable();
     table.string('mileage').notNullable();
     table.string('transmissionType');
     table.string('status');
