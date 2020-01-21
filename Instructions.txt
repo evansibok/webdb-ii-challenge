@@ -6,4 +6,5 @@
 6. Create db-config.js file for knex
 7. npx knex migrate:make <table name> - Create a migration file for that table
 8. Add configuration to migration file
-9. 
+9. npx knex seed:make <file name> - Create seed file
+10. 
